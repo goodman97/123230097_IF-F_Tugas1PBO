@@ -91,7 +91,7 @@ public class PembayaranPage extends JFrame implements ActionListener {
     private void updateTotal() {
         int jumlah = (int) spinnerJumlah.getValue();
         int totalHarga = jumlah * hargaPerItem;
-        int ppn = (int) (totalHarga * 0.11); // PPN 11%
+        int ppn = (int) (totalHarga * 0.11);
         int totalSetelahPPN = totalHarga + ppn;
 
         labelTotal.setText("Total Harga (Sebelum PPN): Rp " + totalHarga);
